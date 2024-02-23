@@ -1,0 +1,5 @@
+<input type="text" (keyup)="onChange($event)">
+
+<p *ngFor="let character of search$ | async; trackBy: getId">
+  {{ character.name.first + ' ' + character.name.middle + ' ' + character.name.last }}
+</p>
